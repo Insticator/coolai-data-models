@@ -17,8 +17,25 @@ Single source of truth for data structures across all CoolAI packages. Version n
 
 ## Installation
 
+### From Private PyPI Server
+
 ```bash
+# 1. Configure pip for private server (one-time setup)
+./setup_pip.sh <server_ip> <username> <password>
+
+# Example:
+./setup_pip.sh 192.168.1.100 admin mypassword
+
+# 2. Install package
 pip install coolai-data-models
+```
+
+### From Source (Development)
+
+```bash
+git clone https://github.com/Insticator/coolai-data-models.git
+cd coolai-data-models
+pip install -e .
 ```
 
 ## Quick Start
