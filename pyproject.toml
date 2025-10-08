@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coolai-data-models"
+version = "0.1.0"
+description = "Pydantic data models for CoolAI media planner ecosystem"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Cool AI Team"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["coolai_data_models*"]
+
